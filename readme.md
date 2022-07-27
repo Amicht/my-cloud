@@ -2,7 +2,7 @@
 Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of files and directories management.
 
 
-![](preview.mp4)
+![](preview.gif)
 
 ## CRUD operations on client side
     Endpoints: 
