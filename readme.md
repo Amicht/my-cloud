@@ -30,7 +30,6 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
     name: string;
     fileName: string;
     folder: string;
-    file: file
 }
 ```
 ### Mongo folder:
