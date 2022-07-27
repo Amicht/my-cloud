@@ -46,6 +46,7 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
     folderName: string;
     folders: mongo folder[];
     files: Mongo file[];
+    parentFolder: string | null;
 }
 ```
 
