@@ -33,17 +33,16 @@ const Home = () => {
 
       <div className="text-center">
         {folderData.folderName? <>
-
         <FolderTitle title={folderData.folderName}/>
 
         <div className="row mt-5 text-start">
-          {folderData.folders.map((file,i) => <FolderComponent key={i} props={file} />)}
+          {folderData.folders.map((folder,i) => <FolderComponent key={i} props={folder} />)}
         </div>
 
         {folderData.folders.length> 0?<hr />:null}
 
         <div className="row mt-5 text-start">
-          {folderData.files.map((folder,i) => <FileComponent key={i} props={folder} />)}
+          {folderData.files.map((file,i) => <FileComponent key={i} props={file} />)}
         </div></>
         
         :null}

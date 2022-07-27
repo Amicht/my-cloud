@@ -1,3 +1,5 @@
+const serverURL = 'http://localhost:3001';
+
 const ENDPOINTS = {
     folders: "/api/folders/",
     files: '/api/files/',
@@ -28,17 +30,17 @@ const updateFile = (file) => fetch(ENDPOINTS.files, {
     method: METHODS.PUT,
     headers: {"Content-type": 'application/json'},
     body: JSON.stringify(file)
-});
+}).then(() => getFolderData(file.folder));
 
-const updateFolder = (folder) => fetch(ENDPOINTS.folders, {
+const updateFolder = ({_id,name, folder}) => fetch(ENDPOINTS.folders, {
     method: METHODS.PUT,
     headers: {"Content-type": 'application/json'},
-    body: JSON.stringify(folder)
-});
+    body: JSON.stringify({id:_id,name})
+}).then(() => getFolderData(folder));
     
 const deleteFolder = folderId => fetch(ENDPOINTS.folders+folderId,{method:METHODS.DELETE});
 const deleteFile = fileId => fetch(ENDPOINTS.files+fileId,{method: METHODS.DELETE});
-const getFileSrc = (fileName) => ENDPOINTS.myFiles + fileName;
+const getFileSrc = (fileName) => serverURL + ENDPOINTS.myFiles + fileName;
 
 
 export {

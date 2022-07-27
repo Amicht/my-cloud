@@ -6,7 +6,6 @@
   color: rgb(249, 214, 58);
 }
 .folder:hover{
-  cursor: pointer;
   color: rgb(193, 166, 48);
 }
 .title-folder{
@@ -42,4 +41,14 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
 }
+.crud-icons{
+  opacity: 0;
+}
+.crud-icons{
+  opacity: 0;
+}
+.icons-container:hover .crud-icons{
+  opacity: 1;
+}
+
 
