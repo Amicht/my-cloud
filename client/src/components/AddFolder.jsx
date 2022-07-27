@@ -30,10 +30,11 @@ const AddFolder = () => {
         <span className='folder' onClick={handleShow}>
         <AiOutlineFolderAdd className='fs-1'/>
         </span>
-
         <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Add Folder:</Modal.Title>
+            </Modal.Header>
             <div className='col-8 text-center mx-auto my-3'>
-                <h3>Add folder:</h3>
                 <Form onSubmit={submitFolder}>
                     <Form.Group className="mb-3" controlId="folderName">
                         <Form.Control name='foldernName' required

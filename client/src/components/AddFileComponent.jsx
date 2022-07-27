@@ -28,8 +28,10 @@ const AddFileComponent = () => {
         </span>
 
         <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>Add File:</Modal.Title>
+            </Modal.Header>
             <div className='col-8 text-center mx-auto my-3'>
-                <h3>Add File:</h3>
                 <Form onSubmit={onFileSubmit}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Control 

@@ -4,6 +4,8 @@ import { GrDocumentZip } from 'react-icons/gr';
 import { getFileType } from '../services/fileType.service';
 import { getFileSrc } from '../services/api.service';
 import { useState } from 'react';
+import EditComponent from './EditComponent';
+import DeleteComponent from './Delete.component';
 
 
 const FileComponent = ({props}) => {
@@ -11,9 +13,10 @@ const FileComponent = ({props}) => {
   const [show, setShow] = useState(false);
   const showFile = () => setShow(()=> true);
   const hideFile = () => setShow(()=> false);
+
   return (
     <>
-    <span className="col-md-3 text-dark">
+    <div className="col-md-3 text-dark icons-container">
       <span className='file hover-light' onClick={showFile}>
         <span className='fs-3'>
           {fileType === 'image'?<BsFillFileImageFill className='text-primary'/>:null}
@@ -26,10 +29,16 @@ const FileComponent = ({props}) => {
         </span> 
         <span className='px-2'>{props.name}</span>
       </span>
-    </span>
+      <span className='crud-icons'>
+        <EditComponent {...props}/>
+        <DeleteComponent {...props}/>
+      </span>
+    </div>
 
-    {show && fileType==='image'?<div className='popup-image'>
-      <img className='col-sm-5' src={getFileSrc(props.fileName)} alt={props.name}/>
+    {show?<div className='popup-image'>
+      <embed className='col-sm-5 bg-white' 
+        src={getFileSrc(props.fileName)} 
+        alt={props.name}/>
       <div className='mt-4'>
         <button className='btn btn-light' onClick={hideFile}>close</button>
       </div>
