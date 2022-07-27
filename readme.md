@@ -21,7 +21,7 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
         * delete file by `id` (params).
 
 ## Models / interfaces
-### file:
+### Mongo file:
 ```
 {
     _id: string;
@@ -39,13 +39,13 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
     folder: string;
 }
 ```
-### folder responce:
+### folder on responce:
 ```
 {
     folderId: string;
     folderName: string;
     folders: mongo folder[];
-    files: file[];
+    files: Mongo file[];
 }
 ```
 
