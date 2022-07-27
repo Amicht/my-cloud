@@ -64,26 +64,3 @@ export {
     updateFolderAsync,
     removeAllFolderContentAsync
 };
-
-// const files = [
-//     {
-//         name: 'shirst',
-//         fileName: 'shirst.jpeg',
-//         folder: 'pictures',
-//         type: 'image'
-//     },
-//     {
-//         name: 'amicht',
-//         fileName: 'amicht.jpeg',
-//         folder: 'pictures',
-//         type: 'image'
-//     },
-//     {
-//         name: 'gula',
-//         fileName: 'gula.mov',
-//         folder: 'movies',
-//         type: 'movie'
-//     }
-// ]
-
-// files.forEach(f => addFile(new FileModel(f)));

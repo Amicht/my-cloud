@@ -6,8 +6,6 @@ const fileCtrl = Router();
 
 fileCtrl.post('/', async (req,res) => {
     try{
-        console.log("files: "+req);
-        console.log("req.body: "+req);
         const newFile = await addNewFileAsync(req.body, req.files.file);
         if(!newFile.name){
             throw new ErrorModel(400, 'unable to add');
