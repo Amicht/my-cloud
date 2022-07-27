@@ -1,0 +1,27 @@
+Amit Licht
+Full-stack Developer
+
+
+Great passion for software development, reflected in -
+● Endless learning, even on weekends, to study new staff.
+● Github profile full of projects.
+
+
+
+Skills
+
+HTML5/CSS3, JavaScript, TypeScript, React, Angular,  Node.js, ExpressJS,  SQL, 
+mysql, Third Party Api Integrations, JWT.
+Familiarity with Heroku, Firebase, Cloud functions.
+Languages - Hebrew: Native language, English: Excellent.
+
+
+- honor student at Mizmor music school.
+
+
+Education
+
+John Brice Fullstack course
+2021-2022
+A 10 month bootcamp on end-to-end technologies and skills.
+The course included building projects on weekly bases, focus on best-practices.

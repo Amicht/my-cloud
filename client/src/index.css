@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+.folder{
+  cursor: pointer;
+  color: rgb(249, 214, 58);
+}
+.folder:hover{
+  cursor: pointer;
+  color: rgb(193, 166, 48);
+}
+.title-folder{
+  color: rgb(249, 214, 58);
+  font-size: 40px;
+}
+.hover-light:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+.file{
+  cursor: pointer;
+}
+.add-file{
+  color: rgb(85, 85, 213);
+}
+
+.loading-modal{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  text-align: center;
+}
+.popup-image{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
