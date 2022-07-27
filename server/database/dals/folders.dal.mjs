@@ -17,10 +17,10 @@ const addFolder = (folder) => {
     return newFolder.save();
 }
 const updateFolder = (folder) => {
-    return FolderModel.updateOne({id:folder.id}, {$set:folder});
+    return FolderModel.updateOne({_id:ObjectId(folder.id)}, {$set:{name:folder.name}});
 }
 const deleteFolderById = (folderId) => {
-    return FolderModel.deleteOne({id: folderId});
+    return FolderModel.deleteOne({_id: ObjectId(folderId)});
 }
 
 export {
