@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 import { getFolderData } from "../services/api.service";
-import FileComponent from "./FileComponent";
-import FolderComponent from "./FolderComponent";
+import FileComponent from "./File.component";
+import FolderComponent from "./Folder.component";
 import { FolderCtxt } from "../contexts/folderCtxt";
 import IsLoadindgCtxt from '../contexts/loadinfCtxt'
-import HeaderComponent from "./HeaderComponent";
-import LoadingComponent from "./LoadingComponent";
-import AddFileComponent from "./AddFileComponent";
-import FolderTitle from "./FolderTitle";
-import AddFolder from "./AddFolder";
+import HeaderComponent from "./Header.component";
+import LoadingComponent from "./Loading.component";
+import AddFileComponent from "./crud/AddFile.component";
+import FolderTitle from "./FolderTitle.component";
+import AddFolder from "./crud/AddFolder.component";
 
 
 const Home = () => {

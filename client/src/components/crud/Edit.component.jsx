@@ -1,8 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
 import { useContext, useState } from 'react';
 import {FiEdit2} from 'react-icons/fi'
-import { FolderCtxt } from '../contexts/folderCtxt';
-import { updateFile, updateFolder } from '../services/api.service';
+import { FolderCtxt } from '../../contexts/folderCtxt';
+import { updateFile, updateFolder } from '../../services/api.service';
 import { Button, Form, FormLabel } from 'react-bootstrap';
 
 const EditComponent = (props) =>{
@@ -15,7 +15,7 @@ const EditComponent = (props) =>{
         e.preventDefault();
         handleClose();
         const name = e.target[0].value;
-        console.log({...props, name});
+        
         if(!!props.fileName){
             updateFile({...props, name}).then(data => setFolderData(()=> data));
         }

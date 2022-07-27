@@ -1,8 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
 import { useContext, useState } from 'react';
 import { RiDeleteBin7Line } from 'react-icons/ri'
-import { FolderCtxt } from '../contexts/folderCtxt';
-import { deleteFile, deleteFolder, getFolderData } from '../services/api.service';
+import { FolderCtxt } from '../../contexts/folderCtxt';
+import { deleteFile, deleteFolder, getFolderData } from '../../services/api.service';
 import { Button } from 'react-bootstrap';
 
 const DeleteComponent = (props) =>{

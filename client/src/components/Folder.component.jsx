@@ -3,8 +3,8 @@ import {BsFillFolderFill} from 'react-icons/bs'
 import { FolderCtxt } from '../contexts/folderCtxt'
 import  IsLoadingCtxt  from '../contexts/loadinfCtxt'
 import { getFolderData } from '../services/api.service'
-import DeleteComponent from './Delete.component'
-import EditComponent from './EditComponent'
+import DeleteComponent from './crud/Delete.component'
+import EditComponent from './crud/Edit.component'
 
 const FolderComponent = ({props}) => {
   const { SetIsLoadindgValue } = useContext(IsLoadingCtxt);

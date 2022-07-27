@@ -3,8 +3,8 @@ import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineFileAdd } from 'react-icons/ai';
-import { FolderCtxt } from '../contexts/folderCtxt';
-import { createFile } from '../services/api.service';
+import { FolderCtxt } from '../../contexts/folderCtxt';
+import { createFile } from '../../services/api.service';
 
 const AddFileComponent = () => {
     const [show, setShow] = useState(false);

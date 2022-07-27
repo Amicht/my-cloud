@@ -3,8 +3,8 @@ import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { AiOutlineFolderAdd } from 'react-icons/ai';
-import { FolderCtxt } from '../contexts/folderCtxt';
-import { createFolder } from '../services/api.service';
+import { FolderCtxt } from '../../contexts/folderCtxt';
+import { createFolder } from '../../services/api.service';
 
 
 const AddFolder = () => {
@@ -16,7 +16,7 @@ const AddFolder = () => {
     const submitFolder = e => {
         e.preventDefault();
         handleClose();
-        console.log(folderData);
+    
         const folder = {
             name: e.target[0].value,
             folder: folderData.folderId

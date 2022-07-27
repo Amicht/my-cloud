@@ -4,8 +4,8 @@ import { GrDocumentZip } from 'react-icons/gr';
 import { getFileType } from '../services/fileType.service';
 import { getFileSrc } from '../services/api.service';
 import { useState } from 'react';
-import EditComponent from './EditComponent';
-import DeleteComponent from './Delete.component';
+import EditComponent from './crud/Edit.component';
+import DeleteComponent from './crud/Delete.component';
 
 
 const FileComponent = ({props}) => {
