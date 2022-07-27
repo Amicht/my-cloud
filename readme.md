@@ -7,9 +7,9 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
         folder - `/api/folders/`
         file - `/api/files/`
     GET:
-        * get dictory by `id` (params), with all of its content.
+        * get folder by `id` (params), with all of its content.
     POST:
-        * add one directory (must have a uniqe name): 
+        * add one folder (must have a uniqe name): 
             request body: `name`, `folder` (parent folderId).
         * add one file:
             request body: `name`, `file`, `folder`(parent folderId).
