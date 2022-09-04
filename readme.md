@@ -40,7 +40,7 @@ Dropbox / Google-drive 'MERN' mockup app, allows all the crud operations of file
     folder: string;
 }
 ```
-### folder on responce:
+### folder response:
 ```
 {
     folderId: string;
